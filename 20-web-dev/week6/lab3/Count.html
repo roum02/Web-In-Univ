@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count</title>
+  <link rel="stylesheet" href="Count.css">
+  <script>
+    var count = 0;
+
+    function Inc(){
+      count++;
+      document.getElementById("text").innerHTML = count;
+    }
+
+    function Dec(){
+      count--;
+      document.getElementById("text").innerHTML = count;
+    }
+  </script>
+</head>
+<body>
+  <h1>Inc / Dec</h1>
+  <p id="text">0</p>
+  <button onclick="Inc()">
+    +
+  </button>
+  <button onclick="Dec()">
+    -
+  </button>
+</body>
+</html>
