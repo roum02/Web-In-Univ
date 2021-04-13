@@ -1,0 +1,83 @@
+/*폰트 설정*/
+
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.yellow{
+  color: #FFC72C;
+  font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
+
+body{
+  background-color: green;
+  background-size: cover;
+  font-family: 'NEXON Lv2 Gothic';
+  overflow: scroll;
+}
+
+.background{
+  display: grid;
+  grid-template-rows: 20% auto 20%;
+}
+
+.logo{
+  color: white;
+}
+
+#logo_img{
+  width: 70px;
+  float: left;
+}
+
+#logo_text{
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.content{
+  text-align: center;
+  color: white;
+}
+
+.content_text{
+  font-size: 160%;
+  line-height: 50px;
+}
+
+.content_img > img{
+  width: 30%;
+}
+
+.pay_button{
+  margin: 0px auto;
+  margin-bottom: 10px;
+  background-color: #FFC72C;
+  width: 130px;
+  color: black;
+  border-radius: 5px;
+}
+
+.reorder_button{
+  margin: 0px auto;
+  background-color: white;
+  width: 350px;
+  color: black;
+  border-radius: 5px;
+}
+
+.reorder_button a{
+  text-decoration: none;
+  color: black;
+}
+

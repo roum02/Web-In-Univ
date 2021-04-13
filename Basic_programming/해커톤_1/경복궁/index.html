@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        body {
+            padding: 0px 10px 0px;
+        }
+
+        .title {
+            display: block;
+            padding: 10px 10px 10px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 10px 10px 10px;
+            float: left;
+            display: inline-block;
+
+        }
+
+
+        button {
+            margin: 0 auto;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            float: left;
+            padding: 10px;
+            color: #000;
+            background-color: transparent;
+            border: 2px solid #000;
+            text-align: center;
+            cursor: pointer;
+            width: 140px;
+            border-radius: 25px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .w3-container {
+            float: left;
+            background: #fff;
+            margin-left: 25px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 17px;
+            padding: 50px 50px 50px;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 50px;
+            z-index: -1;
+            filter: blur(4px);
+            cursor: pointer;
+        }
+
+        img:hover {
+            filter: blur(0px);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="title">
+        <h1>경복궁이야기</h1>
+    </div>
+
+    <div class="container">
+        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-c1.jpg">
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'">광화문</button>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-c1.jpg">이곳은 경복궁의 남문, 광화문입니다. 요즘은 광화문 앞 세종로 양쪽으로 정부청사 건물들이 죽 늘어서 있지요? 조선시대에도 비슷했습니다. 광화문 앞은 의정부와 이조, 형조, 예조 등 육조 건물이 들어섰던 관청거리였거든요. 조선의 신하들은 해치를 바라보며 오늘도 공명정대하게 일을 하리라 다짐을 했답니다. 광화문은 역사의 증인이기도 합니다. 임진왜란 때는 불에 타고, 일제강점기에는 해체되어 다른 곳으로 이전되는 수모를 당하고 한국전쟁 때는 포화를 맞았지요. 그러다가 1968년 복원하였으나 목재가 아니라 철근, 콘크리트 건물로 잘못된 위치에 세워지고 맙니다. 다행히 경복궁 복원사업이 시작되면서 현재 광화문은 1867년 고종임금님이 중건 했을 당시의 모습을 되찾았습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id02').style.display='block'">건춘문</button>
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-c16.jpg">이곳 건춘문은 경복궁의 동문입니다. ‘봄이 시작되는 문’이라는 뜻이지요. 이곳은 세자를 비롯한 왕실가족과 종친들이 드나들던 문입니다. 고종임금이 이 문을 통해 몰래 경복궁을 빠져나가 러시아 공사관으로 피신하기도 했습니다. 일명 아관파천이었죠. 건춘문 앞에는 늙은 은행나무가 한 그루 있습니다. 조선시대부터 줄곧 이 자리에 있었다고 합니다. 어린 세자가 배동들과 노는 모습, 미우라의 지시를 받은 일본 낭인들이 명성황후를 시해하기 위해 숨어 들어오던 모습, 건춘문을 빠져나가던 고종임금의 모습. 은행나무는 그 모습들을 다 보았을 것입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id03').style.display='block'">영추문</button>
+        <div id="id03" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-c18.jpg">이곳 영추문은 경복궁의 서쪽 대문입니다. 경복궁 안에 있는 관청에서 근무하는 문무백관들은 주로 이 영추문으로 출입했지요. 조선 초기, 경복궁에는 왕자의 난이 일어났습니다. 당시 태조임금은 둘째왕비 신덕왕후 강씨가 낳은 막내아들 방석왕자를 사랑하여 그를 세자로 삼았습니다. 그러자 장성한 첫째 왕비의 아들들이 불만을 품었습니다. 그들은 세자 방석을 제거하기 위해 비밀모임을 자주 가졌는데 그때 그들이 드나들던 곳이 바로 이곳 영추문입니다. 조선의 대표적인 폭군으로 손꼽히는 연산군은 근정전에서 이곳 영추문에 이르는 구역을 가시로 막아서 사람들이 드나들지 못하게 하기도 했습니다. 그리고 경회루 연못 서쪽에 만세산이라는 인공산을 만들고 연못에서 뱃놀이를 하며 즐겼지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id04').style.display='block'">신무문</button>
+        <div id="id04" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-c19.jpg">이곳은 신무문입니다. 경복궁의 북문이지요. 북쪽은 겨울과 죽음, 그리고 강한 음기를 상징합니다. 그래서 경복궁의 북문인 신무문은 늘 잠가 두었습니다. 북쪽의 음기가 경복궁을 어지럽히지 않도록 하기 위해서였죠. 드물게 이 문이 열리는 경우도 있었습니다. 가뭄이 들어 기우제를 지낼 때, 그리고 임금이 지금의 청와대쪽에 있는 활터로 가려고 할 때면 잠깐씩 신무문을 열곤 했습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id05').style.display='block'">동십자각</button>
+        <div id="id05" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-c22.jpg">동십자각은 외로운 건물입니다. 이 건물은 높은 망루처럼 생겼는데 이상한 점은 이 건물로 들어갈 문이 없습니다. 지붕에 잡상과 단청이 있으니 궁궐의 한 건물 같은데 어떻게 혼자서만 나오게 됐을까요? 동십자각은 원래 경복궁 담장 안에 있었던 건물입니다. 궁궐 안과 밖을 경비하던 요새같은 망루랍니다. 옛날에는 이 망루로 올라가는 계단이 담장 안에 있어서 여기로 군사들이 오르내렸습니다. 화살과 총탄을 막아줄 여장이라는 방호벽도 있어서 전투시설로 손색이 없었습니다. 그러나 일제강점기에 경복궁의 동쪽 담장이 훼손됐습니다. 앞쪽 성벽도 도로를 넓히느라 뒤로 물러나는 바람에 몸체인 경복궁과 따로 떨어져 외롭게 자리를 지키고 있답니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id06').style.display='block'">흥례문</button>
+        <div id="id06" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-d1.jpg">자, 지금 도착하신 곳은 흥례문입니다. 흥례문 앞에서는 궁을 지키는 수문장들이 임무를 교대하는 의식을 했지요. 야간에는 상대방을 확인하기 위해 암호를 주고 받았는데, 임금이 친히 암호를 정합니다. 암호는 매일 바뀌었지요. 지금도 경복궁이 열리는 시간 매 정시 수문장 교대식을 볼 수 있으니 놓치지 마세요. 흥례문에는 가슴 아픈 사연도 있습니다. 일본이 조선을 지배했을 때 흥례문을 없애버리고 이 자리에 조선총독부 건물을 세웠지요. 광복이 되고 나서도 조선총독부 건물은 그대로 이 자리에 있었고 정부청사로도, 박물관으로도 사용되었습니다. 1995년, 마침내 우리 정부는 조선총독부 건물을 허물고 흥례문을 복원하였습니다. 이 문에는 민족적 자존심을 되찾으려는 우리 국민의 의지가 담겨 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id07').style.display='block'">영제교</button>
+        <div id="id07" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/in-d10-1.jpg">흥례문에 들어서면 돌을 깐 길이 3개로 나뉘어 있지요? 약간 도드라진 가운데 길은 임금님만이 지나갈 수 있었습니다. 임금이 아닌 자가 이유 없이 이 어도 위를 걸어가면 매 80대를 맞았다고 합니다. 어도를 따라가 볼까요? 돌다리가 하나 나타날 겁니다. 다리 밑으로는 물이 흐르는데 이 물을 ‘금천’이라 불렀습니다. 금천의 ‘금’은 ‘금지한다’, ‘삼간다’라는 뜻입니다. 이 다리를 건너면 임금의 구역이니 말과 행동을 조심하라는 뜻이지요. 모든 궁궐에는 금천과 금천교가 있습니다. 경복궁의 금천교는 영제교라 불렀지요. 자, 그럼 영제교를 건너보시겠습니까? 영제교 밑에는 특이하게 생긴 동물이 네 마리 있습니다. 궁궐에 들어오려는 사악한 기운을 막는 것이 이 녀석들의 임무지요. 이 중에 유난히 장난꾸러기가 있군요. 혀를 쏙 내밀고 있는 녀석이 있는데 한번 찾아보시지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id08').style.display='block'">기별청</button>
+        <div id="id08" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-d14.jpg">기별청은 궁궐 내의 우체국같은 곳이랍니다. 기별청은 유화문 옆에 딸린 작은 꼬마같은 모습이네요. 유화문은 원래 임금님을 만나려 드나들던 관리들이 주로 출입하던 문입니다. 여기를 지나면 임금님을 뵙는 시간을 기다려야 합니다. 그렇기 때문에 기별청에서는 미리 출입하는 분들을 통제해서 순서를 정해주기도 하고 오늘 무슨 중요한 일이 있는지 그날의 소식지인 기별지를 전달해 주는 역할을 했습니다. 관리들은 유화문과 기별청을 지나면서 임금님이 오늘 무슨 일에 관심이 있으실지, 중요한 일은 무엇일지 알 수 있게 되고 마치 현대인들이 아침신문을 읽는 것처럼 기별지를 읽었을 겁니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id09').style.display='block'">근정문</button>
+        <div id="id09" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/in-e1-1.jpg">이곳은 근정전으로 향하는 근정문입니다. 이 문 앞에 있는 계단을 주목해 주세요. 답도입니다. 임금님의 길이지요. 그런데 계단이 아니여서 밟고 올라가기가 불편해 보입니다. 비나 눈이 오는 날은 더 곤란했겠지요? 임금님은 가마를 타고 이 답도 위를 지나가셨습니다. 답도에 새겨진 새는 바로 봉황입니다. 봉황은 태평성대에 나타나는 새라고 합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id10').style.display='block'">근정전 조정</button>
+        <div id="id10" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/pc-e9.jpg">자! 드디어 근정전에 들어오셨습니다! 근정전 앞 넓은 마당을 ‘조정’이라 부르는데, 여기에서 임금님의 즉위식, 임금과 세자의 책봉식, 사신맞이, 과거시험 같은 큼직큼직한 행사들이 열렸죠. 조정의 양쪽으로 길게 늘어선 돌들이 보입니다. 품계석입니다. 근정전을 바라보고 오른쪽 품계석은 문신들, 왼쪽은 무신들 자리입니다. 전체 조회나 나라의 큰 행사가 있을 때 대신들은 자기 품계에 해당하는 품계석 옆에 섰습니다. 영의정을 비롯해 품계가 제일 높은 정1품부터 임금과 가까운 곳에 섰습니다. 그런데 조정 바닥이 좀 울퉁불퉁합니다. 돌을 매끄럽게 다듬어 놓으면 햇빛이 반사되어 눈이 부십니다. 그러면 근정전에 앉아 있는 임금님은 눈을 찌푸리고 대신들을 내려다보게 됩니다. 게다가 대신들이 신은 가죽신은 바닥이 반들거려서 미끄러지기 쉬웠답니다. 그런데 바닥이 울퉁불퉁하면 미끄러지는 일이 별로 없겠지요. 또 평소에도 발이 걸려 넘어지지 않도록 행동거지를 더욱 조심하게 되고요. 근정전 앞마당에는 이렇게 지혜로운 조선 석공들의 배려가 숨어 있습니다. 조정 바닥에는 이상한 고리가 있습니다. 조정에서 행사를 할 때 햇빛을 가리기 위해 큰 천막을 쳤는데 그때 천막의 줄을 잡아매던 고리지요. 근정전 가까이에 숨어 있으니 한번 찾아보시지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id11').style.display='block'">근정전</button>
+        <div id="id11" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id11').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-e21.jpg">이곳이 경복궁의 중심인 근정전입니다. 근정전 앞에 두 개의 기단이 보이는데, 이것을 ‘월대’라고 합니다. 이 곳에는 서른여섯 개의 동물조각상이 자리잡고 있습니다. 임금님의 공간에 사악한 기운이 접근하지 못하게 하는 수호병 역할을 하지요. 지붕 위에는 서유기에 나오는 삼장법사, 손오공 일행들이 근정전을 지키고 있는데요, 잡상이라고도 불린답니다. 여기 있는 동물들은 모두 쌍쌍입니다. 음양이 조화를 이루어 자손이 번성하라는 뜻이지요. 근정전 기단 위에는 무쇠그릇이 놓여 있는데 ‘드므’라고 합니다. 드므에는 늘 물을 담아 두었는데, 여기에는 이유가 있습니다. 옛날 남산에 불귀신이 살았는데, 얼굴이 아주 흉측하게 생겼답니다. 한번은 불귀신이 경복궁에 불을 내러 왔다가 드므에 비친 자기 얼굴을 보고 너무 놀라 혼비백산 달아났다고 합니다. 목재건물은 불이 나면 속수무책입니다. 그래서 화재가 일어나지 않게 해 달라는 의미로 이곳에 드므를 두었던 것입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id12').style.display='block'">근정전 내부</button>
+        <div id="id12" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-e21.jpg">자, 이제 조선 권력의 최고점인 근정전 내부를 구경해 보시지요. 밖에서 보면 근정전은 2층으로 보입니다. 그런데 안을 들여다보면, 한 층으로 되어 있습니다. 몸을 앞으로 기울여 올려다보면 천장에 매달려 있는 용 두마리가 보일 겁니다. 그 용의 발톱이 7개입니다. 발톱이 4개인 용, 사조룡이 조선 임금의 상징이고 발톱이 5개인 오조룡은 중국 황제만이 사용할 수 있었지요. 그런데, 1867년 흥선대원군이 경복궁을 중건하면서 칠조룡을 근정전 천장에 매달았습니다. 조선의 자주와 자존을 염원하는 마음이었겠지요. 근정전 중앙에 놓인 의자는 임금의 의자인 어좌입니다. 어좌 뒤에는 해와 달, 5개의 봉우리, 소나무, 폭포, 파도 등이 그려져 있는 병풍이 있습니다. 이 병풍은 임금 계신 곳을 상징합니다. 그래서 어좌 뒤에는 항상 이 병풍이 펼쳐져 있는 거지요. 병풍 가운데를 보시면 문이 있다는 걸 알 수 있을 겁니다. 임금님이 근정전에 오실 땐 뒷문으로 들어오셔서 이 병풍의 문을 열고 나오셨지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id13').style.display='block'">사정전</button>
+        <div id="id13" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id13').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-f1.jpg">이곳은 임금님이 정사를 보시던 사정전입니다. 조선의 정치는 매일 아침 이 곳 사정전에서 시작됩니다. 이곳에서 상참의, 즉, 오늘날의 국무회의가 열렸거든요. 임금님이 대신들과 이야기를 나눌 때 옆에서 무언가 열심히 쓰는 사람들이 있습니다. 바로 조선왕조실록과 승정원일기를 기록하는 사관과 주서입니다. 사관과 주서의 기록은 임금님도 볼 수 없었습니다. 사관과 주서는 기록에 자기 이름을 적지 않아도 됐고요. 임금님의 눈치를 보지 않고, 공정하게 기록할 수 있었지요. 사관의 기록은 조선왕조실록으로, 주서의 기록은 승정원일기로 엮어졌습니다. 객관성과 공정성, 472년의 장대한 기록, 이러한 점을 인정해 유네스코는 조선왕조실록과 승정원일기를 세계기록유산으로 등재했습니다. 이곳, 사정전은 조선의 중요한 역사가 이루어지고 세계인이 보존해야할 유산이 탄생한 곳입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id14').style.display='block'">강녕전</button>
+        <div id="id14" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id14').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-g1.jpg">이곳은 임금의 처소, 강녕전입니다. 사정전이 나랏일을 돌보는 일터라면 강녕전은 편안하게 쉬시는 곳이죠. 왕비는 이곳에 함께 기거하지 않았습니다. 유교의 법도에 따라 각기 다른 전각에서 생활했지요. 임금님 방이 생각했던 것 보다 좀 작나요? 조선의 임금들은 생각만큼 크고 화려한 공간에서 생활하지 않았습니다. 솔선수범하여 검소한 생활을 하는 것이 미덕이었거든요. 조선 19대 숙종임금님은 천둥이라도 치면 자신이 언로를 막은 것은 아닌지, 인사를 잘못한 것은 아닌지 정치를 잘못해서 백성이 곤궁한 것은 아닌지 스스로를 책망했다고 합니다. 강녕전은 모두 9개의 방으로 이루어져 있습니다. 그런데 방과 방 사이에는 모두 문을 만들어 두어 서로 통하게 하였습니다. 또 가운데 마루 쪽의 문은 들어 올릴 수가 있습니다. 여름에는 문을 들어 올려서 시원하게 바람을 들이고, 겨울에는 문을 내려 따뜻하게 지낸 거죠. 우리 건축만의 특징입니다. 또한 강녕전은 근정전처럼 월대가 있습니다. 여기에서 왕실 가족들의 잔치를 열기도 했습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id15').style.display='block'">강녕전</button>
+        <div id="id15" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id15').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-g1.jpg">이곳은 임금의 처소, 강녕전입니다. 사정전이 나랏일을 돌보는 일터라면 강녕전은 편안하게 쉬시는 곳이죠. 왕비는 이곳에 함께 기거하지 않았습니다. 유교의 법도에 따라 각기 다른 전각에서 생활했지요. 임금님 방이 생각했던 것 보다 좀 작나요? 조선의 임금들은 생각만큼 크고 화려한 공간에서 생활하지 않았습니다. 솔선수범하여 검소한 생활을 하는 것이 미덕이었거든요. 조선 19대 숙종임금님은 천둥이라도 치면 자신이 언로를 막은 것은 아닌지, 인사를 잘못한 것은 아닌지 정치를 잘못해서 백성이 곤궁한 것은 아닌지 스스로를 책망했다고 합니다. 강녕전은 모두 9개의 방으로 이루어져 있습니다. 그런데 방과 방 사이에는 모두 문을 만들어 두어 서로 통하게 하였습니다. 또 가운데 마루 쪽의 문은 들어 올릴 수가 있습니다. 여름에는 문을 들어 올려서 시원하게 바람을 들이고, 겨울에는 문을 내려 따뜻하게 지낸 거죠. 우리 건축만의 특징입니다. 또한 강녕전은 근정전처럼 월대가 있습니다. 여기에서 왕실 가족들의 잔치를 열기도 했습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id16').style.display='block'">교태전</button>
+        <div id="id16" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id16').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-g20.jpg">이곳은 조선 왕비의 공간인 교태전입니다. 교태란 ‘음’과 ‘양‘의 조화를 뜻하지요. 조선의 왕비는 국모였습니다. 그 인생은 세자빈이 되는 순간부터 시작된다고 볼 수 있지요. 세자가 10살 전후가 되면 조선왕실에서는 세자빈을 간택했습니다. 세자빈을 뽑을 때 가장 중시한 것은 ‘덕망’과 ‘기품’이었습니다. 대비와 왕비를 비롯한 왕실 어른들은 규수들이 음식 먹는 모습, 말하는 모습 등을 세심하게 살폈습니다. 그러나 정작 신랑이 될 세자는 이 과정에 간여할 수 없었습니다. 세자빈으로 간택된 규수는 곧장 세자빈 교육과정을 밟습니다. 그리고 좋은 날을 잡아 가례를 올렸습니다. 이때 세자빈은 나무 기러기 한 쌍을 받습니다. 기러기는 평생 짝을 바꾸지 않을 정도로 금슬이 좋은 새라고 합니다. 기러기처럼 세자와 세자빈 역시 백년해로하라는 뜻이지요. 가례를 치렀지만 아직은 형식적인 부부입니다. 정식으로 합방을 하게 되는 것은 두 사람이 15, 6세가 되었을 무렵입니다. 일단 궁에 들어오게 된 어린 세자빈은 언제 친정을 방문할 수 있을지 기약할 수 없었습니다. 얼마나 슬프고 무서웠을까요? 교태전 뒤뜰에는 ‘아미산’이라는 작은 후원이 있습니다. 조선 왕비들이 바라보며 마음을 달래던 아미산을 한번 둘러보시지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id17').style.display='block'">아미산</button>
+        <div id="id17" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id17').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-g33.jpg">경복궁하면 경회루를 빼 놓을 수 없죠. 경복궁 창건 당시 서쪽 습지를 파 연못을 만들고 지은 누각인데, 그 경치가 참 아름다워 연회 장소로 쓰였다고 합니다. 그런데 이때 연못을 판 흙은 어떻게 되었을까요? 바로 왕비의 거처인 교태전 뒤편, 아미산을 쌓는데 쓰였다고 합니다. 아미산은 인공적으로 만든 작은 동산으로 교태전의 후원이기도 했습니다. 장대석으로 석축을 네 단 세웠고 각 단마다 화초와 나무를 심었답니다. 원래 아미산(峨嵋山)은 중국 사천성에 있는 산이며 도교와 불교의 성지입니다. 아미산에서 특히 볼만한 것은 4개의 굴뚝입니다. 굴뚝들은 육각형으로 30, 혹은 31단으로 쌓았습니다. 이 굴뚝들은 교태전 온돌방 밑을 지나 연기가 나가는 곳으로, 현재 남아 있는 것은 고종 2년(1865) 경복궁을 다시 세울 때 만든 것입니다. 각 굴뚝 면마다 덩굴, 학, 박쥐, 소나무, 대나무, 매화, 국화, 불로초, 바위, 새, 사슴, 해태, 불가사리 등 많은 무늬가 조화롭게 놓였습니다. 이 무늬들은 장수와 부귀를 상징하고 화재와 악귀를 막는 상서로운 짐승들입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id18').style.display='block'">흠경각</button>
+        <div id="id18" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id18').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-g39.jpg">이곳은 흠경각입니다. 하늘을 공경하고 백성들에게 때를 알려 준다는 뜻이지요. 조선은 농업국가였습니다. 정확한 때에 씨를 뿌리고 거두어야 농사를 망치지 않습니다. 자칫 그 시기를 놓치면 백성들은 배를 곯을 수 밖에 없었지요. 백성들에게 정확한 절기와 시간을 알려주고자 한 세종임금님은 과학에 천부적 재능이 있는 관노비 출신의 장영실을 등용합니다. 그리고 그에게 일러 일종의 과학관을 만들게 했으니, 그것이 바로 이 흠경각입니다. 이곳에는 자동 천문시계, 해시계를 비롯한 각종 기상관측 기구들을 모아 두었습니다. 장영실과 여러 과학기술자들은 이곳에 모여 연구를 했지요. 흠경각을 임금의 처소 가까운 곳에 둔 것을 보면 세종임금님이 얼마나 과학을 중시했는지 알 수 있지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id19').style.display='block'">함원전</button>
+        <div id="id19" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id19').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/in-g48.jpg">왕비의 거처인 교태전에서 경회루 방향으로 협문을 나서면 함원전이 나타납니다. 함원전은 세종 때 불상을 모셔두고 불교 의식과 행사를 열었던 곳으로, 경복궁 내에서 유일하게 오직 불교를 위해 지어진 공간이랍니다. 임진왜란 때 불탔다가 고종 때 경복궁을 중건하면서 다시 세웠지만, 일제 강점기 때 다시 화재로 소실되고 맙니다. 지금 남아있는 건물은 1995년 복원한 것이죠. 유교의 뜻에 따라 세워진 조선의 궁궐에 불교 행사를 위한 건물이 있었다는 사실이 독특하게 비치기도 합니다. 어쩌면 함원전은 정치에 지친 왕족들이 마음의 평안을 빌면서 한 숨을 돌리는 공간이 아니었을까요?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id20').style.display='block'">자경전</button>
+        <div id="id20" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id20').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-h1.jpg">이곳은 자경전입니다. 임금의 어머니를 위한 공간이지요. 자경은 ‘어머니에게 경사가 있기를’이라는 뜻입니다. 조선은 유교사회로, ‘효’를 가장 중요한 덕목으로 꼽았습니다. 자경전은 바로 그런 효도의 상징으로 지은 전각입니다. 자경전에는 화려하고 섬세한 장식이 많습니다. 우선, 중전의 처소에 있는 담만큼 아름다운 꽃담이 있고, 자경전 뒤뜰에는 곱게 구운 벽돌 위에 십장생 무늬를 얹은 아름다운 굴뚝이 있습니다. 조선은 여성들의 정치활동을 엄격하게 금했습니다. 하지만 예외인 경우가 있었으니 바로 대비의 “수렴청정”입니다. 어린 임금이 보위에 오르면 왕실 최고 어른 자격으로 국정을 처리한 것이지요. 조선 역사에서 다섯분의 대비가 수렴청정을 했습니다. 자경전은 고종임금의 아버지 흥선대원군이 고종임금을 양자로 삼아 왕위에 오르게 해 준 신정왕후를 위해서 만든 전각입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id21').style.display='block'">십장생 굴뚝</button>
+        <div id="id21" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id21').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-h7.jpg">자경전은 궁궐의 최고 어르신인 대비께서 거처하시는 곳입니다. 그래서 대비께서 오래 사시라는 갸륵한 바람을 주변 담장과 굴뚝에 표현했습니다. 굴뚝은 항상 지저분해지고 검은색으로 변하기 마련이어서 보기에 좋지 않습니다. 우리 조상들은 이러한 문제를 해결하기 위해 굴뚝처럼 보이지 않으면서도 아름다운 모습을 나타내기 위해 자경전 굴뚝을 담장과 일치시키면서 다양한 문양을 새겨 넣는 지혜를 발휘하였습니다. 이 굴뚝은 크기만 한 것이 아니라 굴뚝 자체가 멋진 예술작품입니다. 굴뚝의 가운데 큼지막한 직사각형에는 많은 무늬가 있습니다. 해, 구름, 산, 돌, 학과 사슴, 거북과 불로초, 소나무와 물입니다. 이들을 일컬어 십장생이라 합니다. 십장생 주변에는 연꽃과 오리, 포도송이가 어우러져 있습니다. 이 무늬를 길상문이라고 한답니다. 이 아름다운 화폭 위 아래로 해태, 용, 학, 박쥐, 불가사리 등이 도드라진 큼직한 벽돌들이 있습니다. 이들도 역시 복을 부르고 장수를 기원하며 사악한 기운이 들어오지 못하기를 바라는 마음을 표현한 것이랍니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id22').style.display='block'">꽃담</button>
+        <div id="id22" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id22').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-h10.jpg">자, 여기부터는 왕실의 최고어른인 대비마마의 처소, 자경전입니다. 왕비 처소인 교태전의 담만큼이나 화려하고 아름다운 꽃담입니다. 벽돌을 구워서 쌓았는데 그 위에는 매화, 난초, 천도, 모란, 국화, 대나무, 나비, 연꽃 등 아름다운 무늬가 새겨져 있습니다. 그런데 자세히 들여다보면, 벽돌을 구워내어 퍼즐 맞추듯 하나하나 짜 맞춘 것입니다. 이런 공법은 손도 많이 가지만 경제적으로도 부담이 크지요. 주홍색 담장에 쭉 이어진 흰색 선을 찾아보십시오. 사실은 주홍색 부분이 주무늬입니다. 주홍색 부분을 손끝으로 따라가 보세요. 막히지도 않고 끊어지지도 않고 쭈욱... 이어져 있습니다. 이것은 장수를 기원하는 염원을 표현한 것이라고 합니다. 이곳에는 파란만장한 조선 말기 역사의 한 장면이 깃들어 있답니다. 함께 들어가 보실까요?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id23').style.display='block'">동궁전</button>
+        <div id="id23" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id23').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-i1.jpg">이곳은 동궁 영역입니다. 음양오행에서 동쪽은 봄을 뜻하지요. 봄은 만물이 소생하는 희망찬 계절인 만큼 미래의 임금이 될 세자의 공간을 동쪽에 두고 동궁이라 불렀답니다. 이곳에서 가장 오래 살았던 세자는 세종임금님의 아들인 문종임금입니다. 즉위하기까지 무려 28년 동안이나 살았으니까요. 문종임금은 이곳에 기거하면서 훈민정음 창제도 돕고, 다연발 로켓포인 신기전 성능을 향상시키는 법도 연구했습니다. 장영실과 함께 측우기도 고안했지요. 문종임금의 아내, 세자빈 권씨는 자선당에서 단종을 낳았습니다. 그러나 원손아기씨를 낳은 다음날 산후병으로 그만 세상을 뜹니다. 문종임금 역시 왕위에 오른 지 2년 만에 돌아가시고 말았습니다. 그리하여 어린 나이에 보위에 오른 단종임금은 숙부인 수양대군에게 왕위를 찬탈당하고 결국은 목숨까지 잃고 맙니다. 역사가들은 만약 문종임금이 장수했다면 세종임금님에 버금가는 성군이 되었을 것이라고 합니다. 역사에 가설이란 헛된 생각일 뿐이지만 세종임금님이 세우고 문종임금이 이어나갔을 조선의 모습은 어떠했을까 한번 떠올려 봅니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id24').style.display='block'">경회루</button>
+        <div id="id24" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id24').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-j1.jpg">이곳은 경회루입니다. 조선의 누각 중에서 가장 큰 곳이죠. 경회루는 과거에는 훨씬 화려했다고 합니다. 돌기둥마다 꿈틀대는 용이 새겨져 있었다고도 하지요. 하지만 임진왜란 때 불에 타 버렸고 270여년이 지난 고종임금님 때에 다시 지어졌습니다. 그때 화재로부터 경회루를 지켜 달라는 의미로 청동 용 두 마리를 연못에 넣었다는 기록이 있었는데 1997년 경회루 연못 공사때 물을 모두 뺐더니 실제로 청동용이 나왔습니다. 발견된 용은 현재 고궁 박물관에 전시되어 있습니다. 가까이서 보면 기둥 이곳저곳에 패인 부분이 보입니다. 한국전쟁 때 총탄의 흔적입니다. 경회루로 들어가는 작은 다리 양편에는 쇠를 먹어 버려 경복궁을 보호한다는 불가사리가 앉아 있는데 한 녀석의 코가 훼손되었군요. 경회루로 날아드는 폭탄 파편을 이 녀석이 몸을 던져 막아낸 것은 아닐까요? 이곳에서는 왕실의 화려한 연회가 많이 열렸답니다. 중국 사신들을 환영하는 연회가 열리기도 했고, 경회루 앞에서는 활쏘기 대회나 무과시험이 펼쳐지기도 했습니다. 가뭄이 들면 여기서 기우제를 지내기도 했고요. 수면위에 비친 경회루의 모습을 한 번 보시지요. 날씨가 좋고 바람이 잔잔한 날 경회루의 모습은 신비롭기까지 하답니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id25').style.display='block'">향원정</button>
+        <div id="id25" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id25').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-k1.jpg">보이는 이 연못이 향원지입니다. 향원지 한가운데 있는 정자가 향원정입니다. 이곳은 고종임금이 특히 좋아한 장소이기도 합니다. 고종임금과 명성황후는 나란히 향원지를 산책하기도 하고, 향원정에서 오붓한 시간을 보내곤 했답니다. 향원지는 조선에서 처음으로 전기가 발생한 곳입니다. 1887년이었죠. 당시 향원정의 발전설비는 동양에서 가장 성능이 뛰어났다고 합니다. 16촉 광열등을 자그마치 759개나 켤 수 있었다지요? 당시 사람들은 전깃불을 물이 만드는 불이라고 해서 ‘물불’, 깜빡깜빡 거린다고 ‘도깨비불’, 꺼졌다 켜졌다 한다고 ‘건달불’이라고도 불렀답니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id26').style.display='block'">태원전</button>
+        <div id="id26" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id26').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-l1.jpg">이곳은 태원전입니다. 태원전은 임금의 초상화, 즉 어진을 모셔놓던 곳입니다. 태조와 세조, 원종, 숙종, 영조, 순조의 어진이 모셔져 있었답니다. 또, 이곳은 국상을 치른 후 신위를 모시던 혼전, 상여가 나가기 전에 관을 모시던 빈전으로 사용되었습니다. 일본 낭인들 손에 비참하게 승하한 명성황후의 관도 이곳에 머물렀습니다. 시신을 제대로 수습하지 못해서 빈 관으로 모셨다고 합니다. 조선의 왕들은 그리 오래 사시지는 못했습니다. 가장 단명한 임금은 단종임금으로 17세, 그리고 8대 예종임금이 20세로 생을 마감했습니다. 가장 장수한 임금은 영조임금으로 83세까지 살았습니다. 태원전 양쪽에는 세답방이 있었습니다. 세답방은 빨래와 다듬이질을 도맡아하는 곳입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id27').style.display='block'">건청궁</button>
+        <div id="id27" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id27').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-m1.jpg">이곳은 경복궁에서 가장 깊숙한 곳에 자리 잡은 건청궁입니다. 다른 전각과 약간 달리 보이시나요? 네. 건청궁은 일반 사대부집 건축양식을 취하고 있기 때문이지요. 건청궁은 고종임금과 명성황후가 살던 곳입니다. 고종임금이 생활한 곳은 장안당입니다. 사대부 주택의 사랑채라고 할 수 있지요. 그리고 명성황후는 안채, 곤녕합에서 지내셨습니다. 곤녕합의 옥호루는 명성황후가 일본 낭인들에 의해 시해를 당한 장소로 알려져 있습니다. 고종임금 내외는 감을 참 좋아했다고 합니다. 그래서 2007년 건청궁을 복원할 때 장안당 뒤뜰에 감나무 한 그루를 심었지요. 궁이라는 이름을 달고 있지만 대궐 같지 않은 건청궁. 그러나 고종임금은 이 궁궐같지 않은 궁궐을 세우는 것으로부터 스스로 국정을 주도하려는 행보를 시작했습니다. 아버지 흥선대원군의 간섭으로부터 벗어나서 말이죠.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id28').style.display='block'">집옥재</button>
+        <div id="id28" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id28').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-n1.jpg">이곳은 집옥재 일원입니다. 집옥재는 ‘보물을 모아 놓은 곳’이란 뜻을 가진 건물입니다. 이 곳에는 4만여권에 이르는 책이 보관되어 있었다고 합니다. 서양의 기계 문명，과학 서적 등이 포함되어 있었지요. 왕립도서관이라고나 할까요? 그 책들은 현재 서울대학교 규장각과 한국학중앙연구원 장서각에서 소장하고 있습니다. 세 건물은 복도로 연결되어 있습니다. 오른편의 협길당은 전형적인 조선집이지만 가운데 집옥재와 왼편 팔우정은 왠지 이국적 정취가 풍깁니다. 이 건물은 청나라의 건축양식을 취하고 있습니다. 용마루의 용도 경복궁 다른 전각에서 본 용과는 다릅니다. 조선 건축에서는 용의 머리를 얹어 놓는데 집옥재는 몸을 휘감고 올라가는 용을 올려놓았지요. 그러나 집옥재를 지키는 돌짐승은 영락없는 조선식입니다. 동글동글 주먹코에 헤벌쭉 웃는 얼굴. 조선 특유의 해학미가 느껴지는 조각기법이지요. 고종임금은 청나라의 신식 문물을 들여오면서 청나라양식의 건물을 지었습니다. 그럼에도 한 쪽에는 온돌이 놓인 조선집을 나란히 앉혔습니다. 구한말 이 곳에서 고종임금은 미국, 일본 공사, 오스트리아 사신들을 접견하고 국서를 전달받았습니다. 당시 조선은 내부적으로는 동학운동이 들불처럼 번지고 있었고 외부적으로는 청일전쟁을 목전에 두고 있었습니다. 조선의 운명을 논하는 숨가쁜 회의가 이곳에서 이루어졌겠지요. 이 주변은 1961년 이후 청와대 경비를 담당하는 수도경비사령부가 머물면서 보안과 경호를 이유로 일반인들의 출입을 금지했습니다. 그러다가 2006년, 경복궁의 북문인 신무문과 함께 개방되었습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id29').style.display='block'">수정전</button>
+        <div id="id29" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id29').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-o1.jpg">이곳은 수정전입니다. 세종임금님 시대 집현전이 있었던 자리지요. 세종임금님이 한글을 창제하신 후 실용화할 수 있도록 도왔던 그 집현전입니다. 집현전은 조선 최고의 두뇌들이 모인 곳이었습니다. 세종임금님은 집현전 학자들을 많이 아끼셨죠. 장서각을 만들어서 귀한 책도 맘껏 보게 해 주시고요. 덕분에 세종임금님 시절에 조선은 과학, 역사, 천문, 음악 등 모든 분야가 발달했지요. 집현전 학자들의 가장 값진 활동 중 하나는 세종임금님이 훈민정음을 창제하신 이후 그 해설서인 훈민정음해례를 편찬하고 또 훈민정음을 실제로 활용한 '용비어천가'와 '월인천강지곡'을 펴내는 일을 적극 보필한 것이지요. 자, 그럼 수정전을 천천히 돌아보면서 집현전 학자들의 열의를 느껴보시지요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id30').style.display='block'">궐내각사 터</button>
+        <div id="id30" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id30').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/in-o12.jpg">수정전과 영추문 사이에는 넓은 잔디밭이 있습니다. 이곳은 조선시대 궐내각사가 있던 곳입니다. 궐내각사는 임금을 보필하기 위해 궁궐 안에 세운 다양한 관서를 부르는 말입니다.
+                        조선시대 이곳에는 천문과 시각을 관측하는 흠경각이 있었습니다. 뿐만아니라 왕과 관리들이 모여 토론을 하는 옥당과 왕실 전용 병원인 약방과 궁궐의 도서관인 내각 등이 있었습니다.
+                        하지만 일본에게 나라의 주권을 빼앗긴 이후 이곳의 건물들은 모두 헐리게 되었고, 현재는 빈터만 남게 되었습니다. 최근에 경복궁을 발굴조사 하면서 왕명을 출납하던 승정원, 대신들이 회의를 하던 빈청, 왕의 경호요원들이 사용하던 선전관청 등의 건물 흔적이 발견되어 많은 사람이 북적거리던 당시의 모습을 추정해 볼 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id31').style.display='block'">고종즉위40년 칭경비</button>
+        <div id="id31" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id31').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/ic-q4.jpg">조선 제26대 고종(재위 1863∼1907)의 즉위 40주년이 되는 1902년 나이 51세로 기로소(耆老所)에 들어간 것을 기념한 비입니다. 고종 즉위 40년 칭경 기념비는 1897년 국호를 대한제국(大韓帝國)으로 고치고 황제의 칭호를 사용했던 것을 기념하는 뜻도 담겨져 있습니다. 이 비는 1969년 7월 18일 사적 제171호로 지정되었습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id31').style.display='block'">소주방</button>
+        <div id="id31" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id31').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>
+                        <img src="http://www.heritage.go.kr/gung/gogung1/images/in-g49.jpg">“오나라 오나라 아주 오나~”
+                        이 노래 기억하시나요? 드라마 '대장금'의 주제가였죠?
+                        '대장금'의 중요한 무대 중의 하나였던 곳이 바로 소주방입니다. 임금님의 수라상과 잔칫상을 준비하던 곳이죠. 내소주방은 왕을 위한 수라, 외소주방은 잔치와 제사 음식, 생과방이라고도 불린 생물방은 다과와 음료를 만들었다고 하네요. 소주방은 대비의 거처였던 자경전의 남쪽에 위치해 있었습니다. 안타깝게도 소주방은 지금 남아 있지 않습니다. 그렇지만 너무 실망하지 마세요. 곧 다시 소주방의 모습을 볼 수 있을 테니까요. 문화재청이 지난 2011년부터 소주방 복원공사를 시작했답니다. 소주방 복원은 경복궁 2차 복원사업의 첫 사업입니다. 총 6단계로 진행되는데, 그 중 소주방 복원이 포함된 궁중생활권역 56개동이 1단계입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>

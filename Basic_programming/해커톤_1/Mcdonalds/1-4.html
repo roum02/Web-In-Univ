@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>맥도날드 키오스크</title>
+    <meta name="viewport" contant="user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href=" ">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+        @font-face {
+            font-family: SpeedeeK;
+            font-weight: 500;
+            font-style: normal;
+            src: url(https://www.mcdonalds.co.kr/kor/font/Speedee_K_R.woff) format('woff')
+        }
+
+        body {
+            margin: 0 auto;
+            padding: 50px 0 50px;
+            color: #fff;
+            text-align: center;
+        }
+
+        div {}
+
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 5);
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-family: SpeedeeK, 'Noto Sans KR', sans-serif;
+            margin-bottom: 30px;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:link:active,
+        a:visited:active {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .menu {
+            margin: auto;
+            text-align: center;
+            display: inline-block;
+        }
+
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 250px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            display: inline-block;
+            background: #000;
+            padding: 10px 10px 10px;
+            border-radius: 15px;
+            margin-bottom: 5px;
+        }
+
+        img {
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .menu-img {
+            cursor: pointer;
+            display: block;
+        }
+
+
+        .text {
+            color: white;
+            display: inline-block;
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            margin: 0 auto;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: #fff;
+            background-color: #000;
+            border: 2px solid #fff;
+            text-align: center;
+            cursor: pointer;
+            width: 160px;
+            border-radius: 15px;
+            font-size: 22px;
+            display: block;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            body {
+                background-color: darkgreen;
+            }
+        }
+
+        @media screen and (min-width: 767px) and (max-width: 959px) {
+            body {
+                background-color: darkgreen;
+            }
+        }
+
+        @media screen and (min-width: 960px) {
+            body {
+                background-color: darkgreen;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-color: darkgreen;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: darkgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p><img src="https://www.mcdonalds.co.kr/kor/images/common/logo.png"></p>
+        <p>재료를 순서대로<br>
+            터치하여 햄버거를 만들어 주세요</p>
+
+        <h1>번</h1>
+        <div class="category">
+            <div class="card">
+                <div class="menu">
+                    <div class="menu-img">
+                        <img src="data/Brioche.png" width="120px" height="120px">
+                    </div>
+                    <div class="text">브리오쉬 번(55g)</div>
+                    <button>￦500</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="menu">
+                    <div class="menu-img">
+                        <img src="data/oatmeal.png" width="120px" height="120px">
+                    </div>
+                    <div class="text">오트밀 번(55g)</div>
+                    <button>￦600</button>
+                </div>
+            </div>
+        </div>
+
+        <h1>페티</h1>
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/beaf.png" width="120px" height="120px">
+                </div>
+                <div class="text">앵거스 비프 패티(81g)</div>
+                <button>￦2000</button>
+            </div>
+        </div>
+
+        <h1>치즈</h1>
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/amrcn-ch.png" width="120px" height="120px">
+                </div>
+                <div class="text">아메리칸 치즈(14g)</div>
+                <button>￦800</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/prbrn-ch.png" width="120px" height="120px">
+                </div>
+                <div class="text">프로볼로네 치즈(14g)</div>
+                <button>￦800</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/ppz-ch.png" width="120px" height="120px">
+                </div>
+                <div class="text">페퍼 잭 치즈(14g)</div>
+                <button>￦800</button>
+            </div>
+        </div>
+
+        <h1>채소</h1>
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/onion.png" width="120px" height="120px">
+                </div>
+                <div class="text">레드 어니언(15g)</div>
+                <button>￦300</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/onon.png" width="120px" height="120px">
+                </div>
+                <div class="text">어니언(7g)</div>
+                <button>￦500</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/Lettuce.png" width="120px" height="120px">
+                </div>
+                <div class="text">프리미엄 레터스(10g)</div>
+                <button>￦500</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/tomato.png" width="120px" height="120px">
+                </div>
+                <div class="text">토마토(37g)</div>
+                <button>￦500</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/hlpn.png" width="120px" height="120px">
+                </div>
+                <div class="text">할라피뇨(22g)</div>
+                <button>￦300</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/cum.png" width="120px" height="120px">
+                </div>
+                <div class="text">롱 슬라이스 피클(16g)</div>
+                <button>￦300</button>
+            </div>
+        </div>
+
+        <h1>프리미엄 토핑</h1>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/msr.png" width="120px" height="120px">
+                </div>
+                <div class="text">그릴드 머쉬룸(15g)</div>
+                <button>￦500</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/grlld-onon.png" width="120px" height="120px">
+                </div>
+                <div class="text">그릴드 어니언(15g)</div>
+                <button>￦800</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/egg.png" width="120px" height="120px">
+                </div>
+                <div class="text">후라이드 에그(54g)</div>
+                <button>￦800</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu">
+                <div class="menu-img">
+                    <img src="data/bcn.png" width="120px" height="120px">
+                </div>
+                <div class="text">프리미엄 베이컨(12g)</div>
+                <button>￦800</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class=" footer">
+
+    </div>
+
+</body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hackton</title>
+    <meta name='viewport' contant='user-scalable=no, initial-scale=1'>
+    <link rel='stylesheet' href=''>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        @media screen {
+            body { background-color: wheat;}
+        }
+
+        body {
+            width: 100%;
+            margin:0;
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #top
+        #menu {overflow: hidden;}
+        #middle {text-align: center;}
+        #left {float:left; width: 70%; height: 70px;}
+        #right {float:right; width: 30%; height: 70px; }
+
+        ul.menu {
+          float: left;
+          padding: 0;
+          margin: 10px 10px;
+          font-weight: bold;
+        }
+        
+        ul.menu > li {
+          list-style-type: none;
+          float: left;
+          padding-left: 16px;
+          padding-top: 0px;
+        }
+      
+        ul.menu > li:first-child {
+          padding-left: 0;
+        }
+
+        ul.return {
+            float: right;
+            width: 60px;
+            height: 30px;
+            margin: 20px 10px;
+            padding: 0;
+            border: none;
+            display: block;
+            border-radius: 15px;
+            background: green;
+            text-align: center;
+        }
+        .button_start {
+            width: 80px;
+            height: 50px;
+            background-color: yellow;
+            border: none;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            margin-left: -40px;
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .button_start > a {
+            display: block;
+            line-height: 50px;
+        }
+
+        .font_center {text-align: center;}
+        .font_bold {font-weight: bold;}
+
+        a{text-decoration:none;}
+    </style>
+</head>
+<body>
+    <div id = 'top'>
+        <img src='http://www.consumernews.co.kr/news/photo/202012/617800_214253_5644.jpg' alt='상단 광고' width='100%'>
+    </div>
+    <div id = 'menu'>
+        <div id = 'left'>
+            <ul class = 'menu'>
+                <li><img src='https://www.mcdonalds.co.kr/kor/images/common/logo.png' alt='로고' width='50px' height='50px'></li>
+                <li style='padding-top:10px'>주문 메뉴</li>
+            </ul>
+        </div>
+        <div id = 'right'>
+            <ul class = 'return'>
+                <a href='#' style = color:white class = font_center> 이전 </a>
+            </ul>
+        </div>
+    </div>
+    <div id = 'middle'>
+        <img src = 'http://img.danawa.com/prod_img/500000/456/722/img/5722456_1.jpg?shrink=360:360&_v=20171213091619' alt='베이컨토마토디럭스 버거 세트' width = '200px' height='200px'>
+            <p>
+                베이컨 토마토 디럭스 버거를 <br>
+                주문하셨습니다. <br>
+                만들기를 시작해볼까요?
+            
+    </div>
+    <div class = 'button_start'>
+        <a href='#' class = 'font_bold font_center' style = color:black> 시작 </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+.main_box{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/*top_nav*/
+
+.top_nav{
+  grid-column: 1/4;
+}
+
+.top_nav img{
+  float: left;
+}
+
+.top_nav li{
+  list-style: none;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+/*side_nav*/
+.side_nav{
+  grid-row: 2/4;
+}
+
+.side_nav a{
+  display: block;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.side_title{
+  font-weight: bold;
+  font-size: 200%;
+  background-color: rgb(148, 59, 88);
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+  margin: 20px 0px 0px 20px;
+  border-bottom: gold solid 4px;
+  width: 250px;
+}
+
+.side_subtitle{
+  margin: 0px 20px;
+  width: 250px;
+}
+
+.side_subtitle a{
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgb(153, 153, 153);
+  color: white;
+  text-align: center;
+  width: 250px;
+  padding: 10px 0px;
+}
+
+@media(max-width:767px){
+  .side_nav{
+    display: none;
+  }
+}
+
+/*content*/
+.content{
+  grid-column: 2/4;
+}
+
+.content p{
+  color: gray;
+}
+
+.content_nav{
+  background-color: rgb(153, 153, 153);
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10px;
+  margin-right: 20px;
+  grid-column: 2/4;
+}
+
+.content_nav a{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 120%;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.content_border{
+  border: rgb(153, 153, 153) solid 1px;
+  color: gray;
+}
+
+/*bottom*/
+
+.bottom {
+  grid-column: 1/4;
+  background-color: rgb(153, 153, 153); 
+  padding: 10px; 
+  margin-top: 80px;
+  color: white;
+}
+
+.bottom img{
+  margin-right: 30px;
+}
+
+/*rule.html*/
+
+.rule_box{
+  font-weight: bold;
+  background-color: rgb(240, 240, 240);
+  color: black;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  border: rgb(158, 158, 158) solid 1px;
+}
+
+#rule_red{
+  font-size: 200%;
+  color: rgb(211, 0, 0);
+  text-align: center;
+}
+
+.content li{
+  list-style: none;
+}
+
+/*amenities.html*/
+.content img{
+  width: 80%;
+}
