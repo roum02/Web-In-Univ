@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    header a{
+      color: blue;
+    }
+    
+    header > * > h1{
+      color: red;
+    }
+
+    header > div:first-child > a{
+      color: green;
+    }
+
+    header a:first-child{
+      color: yellowgreen;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a>header a</a>
+    <a>header a</a>
+    <h1>just h1</h1>
+    <div>
+      <a>header>div:first-child>a</a>
+      <h1>header>*>h1</h1>
+      <h1>just h1</h1>
+      <div>
+        <a>header>div:first-child>a</a>
+        <h1>just h1</h1>
+      </div>
+      <a>just a</a>
+    </div>
+  </header>
+</body>
+</html>
