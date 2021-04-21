@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gugudan</title>
+  <script src="gugudan.js"></script>
+  <style>
+    p{
+      font-size: 150%;
+    }
+
+    button{
+      margin: 2px;
+    }
+
+    #buttons{
+      display: grid;
+      grid-template-columns: 30px 30px;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Multiply</h1>
+  <p>
+    <span id="first_num">1</span>
+    X
+    <span id="second_num">1</span>
+    =
+    <span id="value_num">1</span>
+  </p>
+
+  <div id="buttons">
+    <button onclick="inc_first(); value_output();">+</button>
+    <button onclick="inc_second(); value_output();">+</button>
+    <button onclick="dec_first(); value_output();">-</button>
+    <button onclick="dec_second(); value_output();">-</button>
+  </div>
+  </body>
+</html>

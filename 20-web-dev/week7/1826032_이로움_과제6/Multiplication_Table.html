@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+  <link rel="stylesheet" href="Multiplication_Table.css">
+</head>
+<body>
+  <h2>Multiplication Table</h2>
+  <input id="first">
+  <input id="second">
+  <button onclick="add_row()">Add</button>
+  <br>
+  <br>
+  <table id="tb">
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>x * y</th>
+    </tr>
+    <script>
+      var x;
+      var y;
+
+      function add_row(){
+        x = document.getElementById("first").value;
+        y = document.getElementById("second").value;
+
+        var mul;
+        mul = Number(x) * Number(y);
+
+        document.getElementById("tb").innerHTML += 
+        "<tr><td>"+ x +"</td><td>" + y +"</td><td>"+ mul +"</td></tr>"
+      }
+    </script>
+  </table>
+</body>
+</html>

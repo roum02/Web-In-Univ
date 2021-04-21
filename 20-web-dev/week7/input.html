@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function add(){
+      var a_val;
+      var b_val;
+      var c_val;
+
+      a_val = document.getElementById("a").value;
+      b_val = document.getElementById("b").value;
+      c_val = Number(a_val) + Number(b_val);
+
+      document.getElementById("c").value = c_val;
+    }
+  </script>
+</head>
+<body>
+  <h1>ADD</h1>
+  <input id="a"> + <input id="b">
+  <button onclick="add()">=</button>
+  <input id="c">
+</body>
+</html>

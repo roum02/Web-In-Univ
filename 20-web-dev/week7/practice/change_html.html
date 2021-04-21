@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: turquoise;
+    }
+    #head{
+      border: white solid 4px;
+    }
+  </style>
+  <script>
+    function text_web(){
+      document.getElementById("head").innerHTML = "web content";
+    }
+
+    function text_js(){
+      document.getElementById("head").innerHTML = "JavaScript Actions";
+    }
+
+    function css_red(){
+      document.getElementById("head").style.color = "red";
+    }
+
+    function css_border(){
+      document.getElementById("head").style.borderColor = "blue";
+    }
+  </script>
+</head>
+
+<body onload="text_web()">
+  <h1 id="head"></h1>
+  <br>
+  <button onclick="text_web()">web</button>
+  <button onclick="text_js()">JS</button>
+  <br>
+  <br>
+  <button onclick="css_red()">Red</button>
+  <button onclick="css_border()">Border</button>
+
+</body>
+
+</html>

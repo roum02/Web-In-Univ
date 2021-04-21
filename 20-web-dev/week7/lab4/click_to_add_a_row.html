@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Square Table</h2>
+  <button onclick="add_row()">Add</button>
+  <br>
+  <br>
+  <table border="1" id="tb1">
+    <tr>
+      <th>x</th>
+      <th>y=x*x</th>
+    </tr>
+    <script>
+      var x;
+      x = 1
+      function add_row() {     
+        y = x * x
+        document.getElementById('tb1').innerHTML +=
+          "<tr><td>" + x + "</td><td>" + y + "</td></tr>";
+        x ++;
+      }
+    </script>
+  </table>
+</body>
+
+</html>
