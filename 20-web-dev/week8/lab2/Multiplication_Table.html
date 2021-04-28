@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Book</title>
+  <link rel="stylesheet" href="Multiplication_Table.css">
+</head>
+<body>
+  <h2>Phone Book</h2>
+  <input id="name">
+  <input id="phone">
+  <button onclick="add_row()">Add</button>
+  <br>
+  <br>
+  <table>
+    <tr id="tb">
+      <th>Name</th>
+      <th>Phone</th>
+    </tr>
+    <script>
+      var n;
+      var p;
+      var pbook = [];
+
+      function add_row(){
+        n = document.getElementById("name").value;
+        p = document.getElementById("phone").value;
+        a = {name:n, phone:p};
+        pbook.push(a);
+        display_pbook();
+      }
+
+      function del_row(){
+        pbook.pop();
+        display_pbook();
+      }
+
+      function display_pbook(){
+
+        for(i=0; i<pbook.length; i++){
+          document.getElementById("tb").innerHTML = 
+          "<tr><td>"+ pbook[i].name +"</td><td>" + pbook[i].phone +"</td></tr>"
+        }
+
+        /*
+        document.getElementById("tb").innerHTML += 
+        "<tr><td>"+ n +"</td><td>" + p +"</td></tr>"
+        */
+      }
+    </script>
+  </table>
+  <br>
+  <button onclick="del_row()">Del</button>
+</body>
+</html>
