@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+</head>
+<body>
+  <span style="background-color: antiquewhite; padding: 5px;">
+    <span id="hh"></span>:<span id="mm"></span>:<span id="ss"></span>
+    <span id="ap"></span>
+  </span>
+  <script>
+    setInterval(run_everysec, 1000);
+
+    function run_everysec() {
+      var d = new Date();
+      document.getElementById("hh").innerHTML = "<b>" + d.getHours(); + "</b>"
+      document.getElementById("mm").innerHTML = "<b>" + d.getMinutes(); + "</b>"
+      document.getElementById("ss").innerHTML = d.getSeconds();
+      if(d.getHours() < 12){
+        document.getElementById("ap").innerHTML = "am";
+      } else{
+        document.getElementById("ap").innerHTML = "pm";
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+</head>
+<body>
+  <div>
+    <span id="hh"></span>:<span id="mm"></span>:<span id="ss"></span>
+  </div>
+  <script>
+    setInterval(run_everysec, 1000);
+
+    function run_everysec() {
+      var d = new Date();
+      document.getElementById("hh").innerHTML = d.getHours();
+      document.getElementById("mm").innerHTML = d.getMinutes();
+      document.getElementById("ss").innerHTML = d.getSeconds();
+    }
+
+  </script>
+</body>
+</html>
