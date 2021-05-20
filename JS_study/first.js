@@ -1,11 +1,9 @@
-var a = 1;
-var outer = function(){
-  var inner = function(){
-    console.log(a);
-    var a = 3;
-  };
-  inner();
-  console.log(a);
+var func = function(x){
+  console.log(this, x);
 };
-outer();
-console.log(a);
+func(1);
+
+var obj = {
+  method: func
+};
+obj.method(2);
