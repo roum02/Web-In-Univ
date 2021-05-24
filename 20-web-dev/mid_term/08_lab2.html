@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="name" type="text" readonly value="1234">
+  <input id="phone" type="text" placeholder="이름을 적어주세요">
+  <button type="button" onclick="add_row()">Add</button>
+  <table border="1px" id="tb">
+    <tr>
+      <td>name</td>
+      <td>phone</td>
+    </tr>
+    <script>
+      pbook = [];
+
+      function add_row(){
+        var n = document.getElementById("name").value;
+        var p = document.getElementById("phone").value;
+        var a = {name:n, phone:p};
+        pbook.push(a);
+        display_pbook();
+      }
+
+      function del_row(){
+        pbook.pop();
+        display_pbook();
+      }
+
+      function display_pbook(){
+        document.getElementById("tb").innerHTML = 
+        "<tr><td>name</td><td>phone</td></th>";
+        
+        for(i=0; i<pbook.length; i++){
+          document.getElementById("tb").innerHTML += 
+        "<tr><td>" + pbook[i].name +"</td><td>" + pbook[i].phone + "</td></th>";
+        }
+      }
+
+    </script>
+  </table>
+  <button type="button" onclick="del_row()">del</button>
+</body>
+</html>

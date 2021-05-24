@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+html{
+  height: 100%;
+}
+
+body{
+  background-image: url(img_ewha.jpg);
+  background-size: cover;
+}
+
+h1,#menu,#text{
+  margin: 5px;
+}
+
+h1{
+  color: white;
+  border: 3px solid white;
+  text-shadow: 0px 0px 20px black;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#text{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 10px;
+}
+
+a{
+  font-weight: bold;
+  background-color: #555;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+#menu{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+@media(min-width:600px){
+  #layout{
+    display: grid;
+    /*grid-template-columns: auto auto;*/
+  }
+  #menu{
+    display: block;
+  }
+}
+
+</style>
+<body>
+  <h1>Web Content</h1>
+  <div id="layout">
+    <div id="menu">
+      <a id="m1" onclick="menu_web()">Web</a>
+      <a id="m2" onclick="menu_html()">HTML</a>
+      <a id="m3" onclick="menu_css()">CSS</a>
+      <a id="m4" onclick="menu_js()">JavaScript</a>
+    </div>
+</body>
+</html>

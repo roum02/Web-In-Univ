@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="d0"></p>
+  <p id="d1"></p>
+  <p id="d2"></p>
+  <p id="d3"></p>
+  <p id="d4"></p>
+  <p id="d5"></p>
+  <p id="d6"></p>
+  <p id="d7"></p>
+<script>
+  var d = new Date();
+  
+  document.getElementById("d0").innerHTML = d;
+  document.getElementById("d1").innerHTML = d.toString();
+  document.getElementById("d2").innerHTML = d.getMonth();
+  document.getElementById("d3").innerHTML = d.getDate();
+  document.getElementById("d4").innerHTML = d.toDateString();
+  document.getElementById("d5").innerHTML = d.getHours();
+  document.getElementById("d6").innerHTML = d.getMinutes();
+</script>
+</body>
+</html>

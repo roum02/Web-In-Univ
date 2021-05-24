@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="add2()">Add</button>
+  <table border="1px" id="tb">
+    <tr>
+      <th>x</th>
+      <th>y = x * x</th>
+    </tr>
+    <script>
+      var N = ["e","J","Jane","N"];
+      var P = [1234,1222,3333,1111];
+      var i = 0;
+
+      function add2(){
+        document.getElementById("tb").innerHTML += "<tr><td>"+ N[i%(N.length-1)] +"</td><td>"+ P[i%(N.length-1)] +"</td></tr>"
+        i++;
+      }
+      
+      /*
+      var x = 1;
+      function add(){
+        var y = x * x;
+        document.getElementById("tb").innerHTML += "<tr><td>"+ x +"</td><td>"+y+"</td></tr>"
+        x++;
+      }
+
+      function add2(){
+        y = x*x;
+        document.getElementById("tb").insertAdjacentHTML("beforeend","<tr><td>"+ x +"</td><td>"+y+"</td></tr>");
+        x++;
+      }
+      */
+    </script>
+  </table>
+</body>
+</html>

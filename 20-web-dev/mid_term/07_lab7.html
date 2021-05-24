@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <script>
+    document.write("hi")
+  </script>
+  <input id="name"><input id="phone">
+  <button onclick="add_row()">Add</button>
+  <script>
+    document.write("hi")
+  </script>
+  <table border="1px" id="tb">
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+    </tr>
+    <script>
+      function add_row(){
+        var n = document.getElementById("name").value;
+        var p = document.getElementById("phone").value;
+
+        document.getElementById("tb").innerHTML += "<tr><td>"+n+"</td><td>"+p+"</td></tr>";
+      }
+    </script>
+  </table>
+</body>
+</html>

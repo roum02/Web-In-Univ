@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var obj = {
+      name:"ewha",
+      age:10,
+      city:"seoul"
+    };
+    var json_str = JSON.stringify(obj);
+
+    document.write(json_str+"<br>");
+
+    var obj2 = JSON.parse(json_str);
+
+    document.write(obj2+"<br>");
+    document.write(obj2.name+"<br>");
+  </script>
+</body>
+</html>
