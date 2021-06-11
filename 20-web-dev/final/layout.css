@@ -1,0 +1,111 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*헤더*/
+
+#r_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+/*추천 박스*/
+#r_content{
+  text-align: center;
+  background-color: #C4C4C4;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: 20px;
+  width: 50rem;
+  color: rgb(104, 104, 104);
+  outline: none;
+
+  /*textarea 높이 자동조절*/
+  /*min-height: 1rem;*/
+  overflow-y: hidden;
+  resize: none;
+}
+
+/*편지 쓰기 제안*/
+#r_move{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(104, 104, 104);
+}
+
+#r_move:hover{
+  color: rgb(192, 163, 0);
+}
+
+/*편지 쓰기 버튼*/
+#move_button{
+  display: inline-block;
+  margin-top: 30px;
+  outline: none;
+}
+
+#move_button:hover{
+  background-color: rgb(216, 184, 0);
+  color: white;
+  border: rgb(192, 163, 0) solid 2px;
+}
+
+/*검색창 div*/
+.input_box{
+  margin-top: 30px;
+}
+/*검색창*/
+#input_name {
+    border-radius: 10px;
+    border: gray solid 1px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 320px;
+    /*outline: none;*/
+}
+
+/*이름 입력 버튼*/
+.button{
+  width: 100px;
+  color:black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  outline:none;
+  padding: 1rem;
+  margin-left: 30px;
+}
+
+/*네비게이션*/
+.nav_items{
+  display: inline-block;
+  padding: 1rem;
+}
+
+/*편지 쓰기*/
+#input_letter{
+  padding: 20px;
+  width: 30rem;
+
+  /*textarea 높이 자동조절*/
+  /*min-height: 5rem;*/
+  overflow-y: hidden;
+  resize: none;
+}
+
+/*편지쓰기 버튼*/
+#letter_button{
+  position: absolute;
+  margin-top: 3px;
+  
+}
