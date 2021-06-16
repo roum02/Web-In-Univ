@@ -4,6 +4,11 @@ section{
   align-items: center;
 }
 
+.nav_items{
+  text-decoration: none;
+  color: black;
+}
+
 /*헤더*/
 
 #r_box{
@@ -109,3 +114,39 @@ section{
   margin-top: 3px;
   
 }
+
+/*write page*/
+
+/*버튼 누르면 페이지 이동할 거냐고 묻는 공간*/
+#w_move{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(104, 104, 104);
+}
+
+/*저장된 편지 싸고 있는 박스*/
+#list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100em;
+  padding: 10px;
+}
+
+/*저장된 편지 보여주는 아이템*/
+.list_items{
+  background-color: #ececec;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+
+/*모달 만들기*/
+/*모달 오버레이*/

@@ -15,20 +15,32 @@
 
         <!--네비-->
         <nav>
-            <a class="nav_items">주접글 생성</a>
-            <a class="nav_items">편지 보내기</a>
-            <a class="nav_items">보낸 편지 확인하기</a>
+            <a class="nav_items" href="main.html">주접글 생성</a>
+            <a class="nav_items" href="write.html">편지 보내기</a>
+            <a class="nav_items" href="check.html">보낸 편지 확인하기</a>
         </nav>
 
         <section>
             <h1>보낸 편지 확인</h1>
             <p>작성된 주접 편지를 확인할 수 있어요.</p>
 
-            <div class="input_box">
-              <div id="list"></div>
-            </div> 
+            <div class="input_box" id="modaloverlay">
+                <div id="list">
+                    <script>
+                        var t = localStorage.getItem("letter");
+                        letter_list = JSON.parse(t);
+                        //letter_list.push(letter_item);
+                        console.log(letter_list);
 
+                        for(var i=0; i < letter_list.length; i++){
+                          document.getElementById("list").innerHTML += "<div class='list_items'>"+letter_list[i]+"</div>";
+                        }
+                        
+                    </script>
+                </div>
             </div>
-        </section>
-    </body>
+
+        </div>
+    </section>
+</body>
 </html>

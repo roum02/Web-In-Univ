@@ -15,9 +15,9 @@
 
         <!--네비-->
         <nav>
-            <a class="nav_items">주접글 생성</a>
-            <a class="nav_items">편지 보내기</a>
-            <a class="nav_items">보낸 편지 확인하기</a>
+          <a class="nav_items" href="main.html">주접글 생성</a>
+          <a class="nav_items" href="write.html">편지 보내기</a>
+          <a class="nav_items" href="check.html">보낸 편지 확인하기</a>
         </nav>
 
         <section>
@@ -29,10 +29,9 @@
                 <textarea id="input_letter" onkeydown="resize_letter()" onkeyup="resize_letter()" placeholder="이곳에 주접 편지를 작성해보세요." autofocus="autofocus"></textarea>
 
                 <!--버튼-->
-                <button class="button" id="letter_button" onclick="save_letter()">저장하기</button>
-            </div> 
-
+                <button class="button" id="letter_button" onclick="save_letter(), mention2()">저장하기</button>
             </div>
+            <div id="w_move"></div>
         </section>
     </body>
 </html>

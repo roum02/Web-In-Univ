@@ -71,12 +71,9 @@ function resize(){
 function mention(){
   document.getElementById('r_move').innerHTML = 
   "복사된 주접으로 편지를 쓸 수 있어요! <br> 편지를 쓰러 가 볼까요? 😉"
-  +'<button id="move_button">편지 쓸래요!</button>';
+  +'<button id="move_button" onClick="location.href=\'write.html\'">편지 쓸래요!</button>';
   
 }
-
-
-
 
 //write page
 
@@ -100,7 +97,37 @@ function save_letter(){
   var letter_item = document.getElementById("input_letter").value;
   letter_list.push(letter_item);
   localStorage.setItem("letter",JSON.stringify(letter_list));
+  console.log(letter_list);
 }
+
+function mention2(){
+  document.getElementById('w_move').innerHTML = 
+  "저장된 편지를 보러 가 볼까요? 😉<br>"
+  +'<button id="move_button" onClick="location.href=\'check.html\'">보러 갈래요!</button>';
+}
+
+
 
 //check page
 
+//편지 박스를 가져오는 함수
+/*
+function load_letter(){
+  var t = localStorage.getItem("letter");
+  if(t == null){
+    letter_item = [];
+    console.log("null");
+  } else{
+    letter_item = JSON.parse(t);
+    console.log(letter_item);
+  }
+  display_letter();
+}
+
+function display_letter(){
+  document.getElementById("list").innerHTML = "<p>"+letter_item+"</p>"
+}
+*/
+
+
+//모달창 만들기
