@@ -91,13 +91,41 @@ function resize_letter(){
   console.log(size_1.scrollHeight);
 }
 
-var letter_list = [];
+letter_list = [];
+
+//letter_list에 편지 데이터를 저장하는 함수
+function add_letter(){
+  letter_item = document.getElementById("input_letter").value;
+  letter_list.push(letter_item);
+}
 
 function save_letter(){
-  var letter_item = document.getElementById("input_letter").value;
-  letter_list.push(letter_item);
+  add_letter();
+  //데이터 로컬로 저장하기
   localStorage.setItem("letter",JSON.stringify(letter_list));
-  console.log(letter_list);
+  console.log("save:"+letter_list);
+  console.log("save2:"+letter_list2);
+  load_letter()
+}
+
+function load_letter() {
+    var t = localStorage.getItem("letter");
+    letter_list2 = JSON.parse(t);
+
+    display_letter();
+
+    console.log(letter_list2);
+
+}
+
+function display_letter(){
+  document.getElementById("list").innerHTML = ""
+
+    for(var i=0; i < letter_list2.length; i++){
+      document.getElementById("list").innerHTML += "<div class='list_items'><div class='list_nth'>"+ (i+1)+ "번째 편지</div>" + letter_list2[i]+"</div>";
+    }
+  
+  console.log("display:"+letter_list2);
 }
 
 function mention2(){
@@ -106,6 +134,32 @@ function mention2(){
   +'<button id="move_button" onClick="location.href=\'check.html\'">보러 갈래요!</button>';
 }
 
+function del_letter(){
+  var del_item = document.getElementById('del_id').value;
+  del_item = Number(del_item)-1;
+  
+  for(var i=0; i < letter_list2.length; i++){
+    if(i === del_item){
+      letter_list2.splice(i,1);
+      //i--;
+    }
+  }
+  console.log(letter_list2);
+  display_letter();
+}
+
+//joke_bear page
+//gif바꾸는 함수
+function change_gif(){
+  var s = document.getElementById("dance").src;
+
+  if(s == 'http://127.0.0.1:5500/20-web-dev/final/dance.gif'){
+    document.getElementById("dance").src = "dance_2.gif"
+  }else{
+    document.getElementById("dance").src = "dance.gif"
+  }
+  
+}
 
 
 //check page

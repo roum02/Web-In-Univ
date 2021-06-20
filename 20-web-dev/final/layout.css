@@ -1,7 +1,29 @@
+/*배경*/
+body{
+  margin-top: 0px;
+  background-image: url('background.png');
+}
+
 section{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(180, 180, 180, 0.8);
+}
+
+/*p태그 마진 없애려고*/
+section p{
+  margin: 3px;
+  font-size: 14px;
+}
+
+nav{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .nav_items{
@@ -9,7 +31,23 @@ section{
   color: black;
 }
 
+.nav_items:hover{
+  background-color: rgb(104, 104, 104, 0.3);
+}
+
+#this_page{
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
 /*헤더*/
+.logo{
+  max-width: 100%;
+  height: 300px;
+  background-image: url('logo_1.png');
+  background-position: center;
+  background-size: cover;
+}
+
 
 #r_box{
   display: flex;
@@ -20,13 +58,10 @@ section{
 /*추천 박스*/
 #r_content{
   text-align: center;
-  background-color: #C4C4C4;
+  background-color: white;
   border: none;
   border-radius: 10px;
-  padding: 20px;
-  padding-right: 50px;
-  padding-left: 50px;
-  margin: 20px;
+  padding: 20px 10px;
   width: 50rem;
   color: rgb(104, 104, 104);
   outline: none;
@@ -37,18 +72,18 @@ section{
   resize: none;
 }
 
-/*편지 쓰기 제안*/
+/*편지 쓰기 제안 멘트*/
 #r_move{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
   text-align: center;
-  color: rgb(104, 104, 104);
+  color: black;
 }
 
 #r_move:hover{
-  color: rgb(192, 163, 0);
+  color: white;
 }
 
 /*편지 쓰기 버튼*/
@@ -59,7 +94,7 @@ section{
 }
 
 #move_button:hover{
-  background-color: rgb(216, 184, 0);
+  background-color: darkgoldenrod;
   color: white;
   border: rgb(192, 163, 0) solid 2px;
 }
@@ -137,6 +172,13 @@ section{
   padding: 10px;
 }
 
+/*몇 번째 편지인지 알려주는 list안의 텍스트*/
+.list_nth{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
 /*저장된 편지 보여주는 아이템*/
 .list_items{
   background-color: #ececec;
@@ -147,6 +189,15 @@ section{
   text-align: center;
 }
 
+/*삭제하는 박스*/
+#del_box{
+  margin-top: 20px;
+}
+
+/*농담곰 페이지*/
+#dance{
+  margin: 30px;
+}
 
 /*모달 만들기*/
 /*모달 오버레이*/

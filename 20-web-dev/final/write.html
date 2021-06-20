@@ -11,13 +11,16 @@
     </head>
     <body>
         <!--헤더-->
-        <header></header>
+        <header>
+          <div class="logo"></div>
+        </header>
 
         <!--네비-->
         <nav>
           <a class="nav_items" href="main.html">주접글 생성</a>
-          <a class="nav_items" href="write.html">편지 보내기</a>
+          <a class="nav_items" href="write.html" id="this_page">편지 보내기</a>
           <a class="nav_items" href="check.html">보낸 편지 확인하기</a>
+          <a class="nav_items" href="joke_bear.html">응원댄스</a>
         </nav>
 
         <section>
@@ -32,6 +35,19 @@
                 <button class="button" id="letter_button" onclick="save_letter(), mention2()">저장하기</button>
             </div>
             <div id="w_move"></div>
+            <!--임시-->
+            <div id="del_box">
+              <p>이곳에서 작성한 주접글을 확인할 수 있어요.</p>
+              <input id="del_id" placeholder="삭제할 번호를 입력하세요.">
+              <button id="del_btn" onclick="del_letter()">삭제</button>
+            </div>
+            
+            <div id="list">
+              <script>
+                load_letter();
+            </script>
+            </div>
+
         </section>
     </body>
 </html>
