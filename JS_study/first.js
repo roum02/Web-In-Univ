@@ -1,14 +1,10 @@
-//콜백함수와 클로저(1)
-var fruits = ['apple','banana','peach'];
-var $ul = document.createElement('ul');
+var Constructor = function (name){
+  this.name = name;
+};
 
-fruits.forEach(function(fruits){
-  var $li = document.createElement('li');
-  $li.innerText = fruit;
-  $li.addEventListener('click', function(){
-    alert('your choice is' + fruit);
-  });
-  $ul.appendChild($li);
-});
+Constructor.prototype.method1 = function(){};
+Constructor.prototype.property1 = 'Constructor Prototype Properety';
 
-document.body.appendChild($ul);
+var instance = new Constructor('Instance');
+console.dir(Constructor);
+console.dir(instance);
