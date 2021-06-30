@@ -1,10 +1,7 @@
-var Constructor = function (name){
-  this.name = name;
-};
+var arr = [1,2];
+Array.prototype.constructor === Array //true
+arr.__proto__.constructor === Array //true
+arr.constructor === Array //true
 
-Constructor.prototype.method1 = function(){};
-Constructor.prototype.property1 = 'Constructor Prototype Properety';
-
-var instance = new Constructor('Instance');
-console.dir(Constructor);
-console.dir(instance);
+var arr2 = new arr.constructor(3,4);
+console.log(arr2);  //[3,4]
