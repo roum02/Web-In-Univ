@@ -1,7 +1,13 @@
-var arr = [1,2];
-Array.prototype.constructor === Array //true
-arr.__proto__.constructor === Array //true
-arr.constructor === Array //true
+var Person = function(name){
+  this.name = name;
+};
 
-var arr2 = new arr.constructor(3,4);
-console.log(arr2);  //[3,4]
+Person.prototype.getName = function(){
+  return this.name;
+}
+
+var iu = new Person('지금');
+iu.getName = function(){
+  return '바로' + this.name;
+};
+console.log(iu.getName());  //바로 지금
